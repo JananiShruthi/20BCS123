@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        AICTE FAQ
+    </title>
+  
+    <style>
+        #autoresizing {
+            display: block;
+            overflow: hidden;
+            resize: none;
+            border-radius: 25px;
+            width: 250px;
+            height: 150px;
+            color:#fff;
+            background-color:indigo;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1 style="color: green">
+        Janani Shruthi
+    </h1>   
+    <p>
+        Here is the answer you have asked for
+    </p>
+  
+      
+    <textarea id="autoresizing">
+        Try cutting, pasting
+        or typing here
+    </textarea>
+      
+    <script type="text/javascript">
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+      
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+    </script>
+</body>
+  
+</html>

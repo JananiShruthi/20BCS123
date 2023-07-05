@@ -1,0 +1,91 @@
+<html>
+<head>
+  <link rel ="stylesheet" type ="text/css" href="../CSS/style.css">
+  <title>TRAIN BOOKINGS</title>
+  <style>
+    #autoresizing {
+        display: block;
+        overflow: hidden;
+        resize: none;
+        border-radius: 25px;
+        width: 250px;
+        height: 150px;
+        color:#fff;
+        background-color:lightblue
+    }
+
+    #section .btntwo {
+    background: #00b894;
+    color: white;
+  }
+  
+  .btntwo:hover {
+    background: #fff;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+   <div class="image">
+     <a href="sample.html"><img src="C:\Users\GENIUS\Documents\Website\HTML\aicte.jpg"></a> 
+   </div>
+   <div class="container">
+     <nav class="navbar">
+      <a href="sample.html"><img src="C:\Users\GENIUS\Documents\Website\HTML\aicte.jpg"></a> 
+      <ul>
+        <li><a href = "#Train">View Train Details</a></li>
+        <li><a href = "#about">About</a></li>
+        <li><a href = "#ViewTraindetails">Book trains</a></li>
+        <li><a href = "#help">Help and Feedback</a></li>
+      </ul>
+     </nav>
+     <section id="Train">
+	     <h1>John Doe's railway services welcomes you</h1>
+	     <h4>Click below to view the train details</h4>
+       <a href="D:\janani\Website\HTML\index.html">
+        <buttontype="button" class="button">
+          <span class="button__text">View train Details</span>
+          <span class="button__icon">
+             <ion-icon name="Train"></ion-icon>
+          </span>
+        </button>
+      </a>
+
+     </section>
+     <section id="about">
+	     <h1>About us</h1>
+	     <p>We are a group of people who help companies maintaining  and managing train </p>
+     </section>
+     <section id="ViewTraindetails">
+	     <h1>Click Below for train Bookings</h1>
+	     <a href="D:\janani\Website\HTML\index.html">
+	     <buttontype="button" class="button">
+		     <span class="button__text">Book trains</span>
+		     <span class="button__icon">
+		        <ion-icon name="Train"></ion-icon>
+		     </span>
+		   </button>
+		 </a>
+     </section>
+     <section id="help">
+	     <h1>Help and feedback</h1>
+      <textarea id="autoresizing">
+        Try cutting, pasting
+        or typing here
+      </textarea>
+      
+      <script type="text/javascript">
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+      
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+      </script>
+			<a class="btntwo">submit here</a>
+     </section>
+   </div>
+</body>
+</html>
